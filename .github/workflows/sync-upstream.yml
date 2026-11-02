@@ -17,6 +17,7 @@ on:
 
 permissions:
   contents: write
+  actions: write          # 用于派发 Pages 部署工作流
 
 # 与本站三个采集工作流共用同一把锁：同一时刻只有一个任务在写仓库，避免 push 互相顶掉
 concurrency:
@@ -126,6 +127,17 @@ jobs:
           git push origin HEAD:main
           echo "committed=true" >> "$GITHUB_OUTPUT"
           echo "changed=$changed" >> "$GITHUB_OUTPUT"
+
+      - name: 触发 Pages 重新部署
+        if: success()
+        run: |
+          # GITHUB_TOKEN 发起的 push 不会触发其他工作流（防递归），所以这里显式派发 Pages 部署
+          curl -sS --fail-with-body -X POST \
+            -H "Authorization: Bearer ${{ secrets.GITHUB_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            -H "X-GitHub-Api-Version: 2022-11-28" \
+            "${{ github.api_url }}/repos/${{ github.repository }}/actions/workflows/pages.yml/dispatches" \
+            -d '{"ref":"main"}'
 
       - name: 写入运行摘要
         if: always()
