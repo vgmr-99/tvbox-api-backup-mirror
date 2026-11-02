@@ -233,6 +233,20 @@ h1 {
     box.innerHTML = html;
   }
 
+  /* ===== 过滤：下线 Telegram / GitHub 两条社群条目 ===== */
+  var OWNED_HIDE_NAMES = ['Telegram 交流群组', 'GitHub 开源仓库'];
+  var OWNED_HIDE_HOSTS = ['t.me/', 'telegram.', 'github.com/'];
+  function filterOwned(items) {
+    return (items || []).filter(function (it) {
+      var n = String((it && it.name) || '');
+      if (OWNED_HIDE_NAMES.indexOf(n) !== -1) return false;
+      var u = String((it && it.url) || '').toLowerCase();
+      for (var i = 0; i < OWNED_HIDE_HOSTS.length; i++) {
+        if (u.indexOf(OWNED_HIDE_HOSTS[i]) !== -1) return false;
+      }
+      return true;
+    });
+  }
   function fetchJson(url) {
     return fetch(url).then(function (r) {
       if (!r.ok) throw new Error('HTTP ' + r.status + ' @ ' + url);
@@ -249,7 +263,7 @@ h1 {
       return fetchJson(encodeURI(cfg.shgroups));
     })
     .then(function (data) {
-      renderList('ownedList', data.owned);
+      renderList('ownedList', filterOwned(data.owned));
       renderList('partnerList', data.partners);
     })
     .catch(function (e) {

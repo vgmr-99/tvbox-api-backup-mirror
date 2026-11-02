@@ -35,10 +35,8 @@
     }
 
     #modeToggleBtn {
-      position: absolute;
-      top: 14px;
-      left: 10px;
-      z-index: 999;
+      display: block;
+      margin: 10px 0 0;
       width: 56px;
       padding: 6px 4px;
       border-radius: 50px;
@@ -1006,7 +1004,7 @@
 
     @media (max-width: 600px) {
       body { padding: 14px 8px 6px; }
-      #modeToggleBtn { top: 10px; left: 6px; width: 48px; font-size: .52rem; padding: 4px 2px; }
+      #modeToggleBtn { width: 48px; font-size: .52rem; padding: 4px 2px; }
       .main-card { padding: 14px 14px 12px; }
       .header-block { padding-top: 10px; margin-bottom: 12px; }
       h1 { font-size: 1.15rem; }
@@ -1052,13 +1050,12 @@
 <body class="simple-mode">
 
   <div class="container">
-    <button id="modeToggleBtn">切换<br>全能版</button>
-
     <div class="header-block">
       <h1>
         <span id="header-title"></span>
       </h1>
       <div class="header-divider"></div>
+      <button id="modeToggleBtn">切换<br>全能版</button>
       <p class="subtitle" id="header-subtitle"></p>
     </div>
 
