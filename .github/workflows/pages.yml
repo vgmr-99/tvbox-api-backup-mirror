@@ -1,0 +1,42 @@
+# 把仓库根目录整站发布到 GitHub Pages
+name: Deploy static content to Pages
+
+on:
+  # 默认分支有推送就重新部署
+  push:
+    branches: ["main"]
+
+  # 允许在 Actions 页面手动触发
+  workflow_dispatch:
+
+# 授予 GITHUB_TOKEN 部署到 Pages 所需的权限
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 同一时刻只允许一个部署；不取消进行中的部署，保证已排队的生产部署能跑完
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  # 直接部署整仓，无需构建步骤
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Pages
+        uses: actions/configure-pages@v5
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          # 上传整个仓库
+          path: '.'
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

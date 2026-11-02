@@ -18,9 +18,9 @@ on:
 permissions:
   contents: write
 
-# 同一时刻只允许一个同步任务，避免两次运行互相覆盖
+# 与本站三个采集工作流共用同一把锁：同一时刻只有一个任务在写仓库，避免 push 互相顶掉
 concurrency:
-  group: sync-upstream
+  group: repo-write
   cancel-in-progress: false
 
 env:
@@ -75,17 +75,32 @@ jobs:
           set -euo pipefail
           git clone --depth 1 "$UPSTREAM_URL" /tmp/upstream
 
-      - name: 整仓镜像到本仓库
+      - name: 整仓镜像到本仓库（跳过本站自有文件）
         if: steps.decide.outputs.changed == 'true'
         run: |
           set -euo pipefail
-          # 仅保留镜像仓库自身的 .git / .github / README / CNAME，其余按上游当前状态整仓覆盖
-          # （--delete 会让上游已删除的文件在本仓库同步消失，保证是镜像而非叠加）
+          # --delete 让上游已删除的文件在本仓库同步消失，保证是镜像而非叠加。
+          # 以下路径属于「本站自有资产」，由本站自己的工作流维护，禁止被上游覆盖或删除：
+          #   .github/                 本站工作流与同步指纹
+          #   README.md                本站仓库说明
+          #   CNAME                    上游 CNAME 指向自定义域，带过来会导致 Pages 域名校验失败
+          #   .gitattributes           本站关闭行尾转换（* -text），保证站点文件逐字节与线上一致
+          #   index.html / config.json 本站前端与站点配置（取自 0.wudaozhe.net 线上版）
+          #   list.txt / livelist.txt  本站接口清单（由本站采集工作流生成）
+          #   SUMMARY.txt              本站采集报告
+          #   tvbox/                   本站接口数据（点播 json / 直播源 / 聚合接口）
           rsync -a --delete \
             --exclude='.git/' \
             --exclude='.github/' \
+            --exclude='/.gitattributes' \
             --exclude='/README.md' \
             --exclude='/CNAME' \
+            --exclude='/index.html' \
+            --exclude='/config.json' \
+            --exclude='/list.txt' \
+            --exclude='/livelist.txt' \
+            --exclude='/SUMMARY.txt' \
+            --exclude='/tvbox/' \
             /tmp/upstream/ ./
           mkdir -p .github
           printf '%s\n' "${{ steps.upstream.outputs.sha }}" > .github/upstream-sha
