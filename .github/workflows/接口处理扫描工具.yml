@@ -74,6 +74,8 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
+          # 先与远端对齐，避免与其他工作流（同步/api下载）落在同一时刻时 push 被拒
+          git pull --rebase --autostash
           git add -A
           # 仅在有变更时提交
           if git diff --cached --quiet; then
