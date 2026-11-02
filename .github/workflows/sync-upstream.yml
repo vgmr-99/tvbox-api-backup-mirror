@@ -1,0 +1,128 @@
+name: Sync upstream (lubin776/tvbox-api-backup)
+
+on:
+  schedule:
+    # 每天 21:00 UTC = 北京时间次日 05:00，此时上游三个采集任务已全部跑完
+    - cron: '0 21 * * *'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: '上游无变化时也强制跑一遍镜像流程（用于首次填充或排障）'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+permissions:
+  contents: write
+
+# 同一时刻只允许一个同步任务，避免两次运行互相覆盖
+concurrency:
+  group: sync-upstream
+  cancel-in-progress: false
+
+env:
+  UPSTREAM_URL: https://github.com/lubin776/tvbox-api-backup.git
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+
+    steps:
+      - name: 检出镜像仓库
+        uses: actions/checkout@v4
+
+      - name: 读取上游 main 最新提交指纹
+        id: upstream
+        run: |
+          set -euo pipefail
+          sha=$(git ls-remote "$UPSTREAM_URL" refs/heads/main | cut -f1)
+          if [ -z "$sha" ]; then
+            echo "::error::无法获取上游 main 分支提交，请检查网络或上游仓库是否改名"
+            exit 1
+          fi
+          prev=""
+          if [ -f .github/upstream-sha ]; then
+            prev=$(tr -d ' \r\n' < .github/upstream-sha)
+          fi
+          {
+            echo "sha=$sha"
+            echo "prev=$prev"
+            echo "short=${sha:0:7}"
+          } >> "$GITHUB_OUTPUT"
+          echo "上游 main   : $sha"
+          echo "上次同步指纹: ${prev:-（无，尚未同步过）}"
+
+      - name: 判断上游是否变化
+        id: decide
+        run: |
+          set -euo pipefail
+          if [ "${{ steps.upstream.outputs.sha }}" = "${{ steps.upstream.outputs.prev }}" ] \
+             && [ "${{ inputs.force }}" != "true" ]; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+            echo "上游 main 未变化，本次跳过同步（不产生提交）。"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+            echo "检测到需要同步，开始整仓镜像。"
+          fi
+
+      - name: 克隆上游
+        if: steps.decide.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          git clone --depth 1 "$UPSTREAM_URL" /tmp/upstream
+
+      - name: 整仓镜像到本仓库
+        if: steps.decide.outputs.changed == 'true'
+        run: |
+          set -euo pipefail
+          # 仅保留镜像仓库自身的 .git / .github / README / CNAME，其余按上游当前状态整仓覆盖
+          # （--delete 会让上游已删除的文件在本仓库同步消失，保证是镜像而非叠加）
+          rsync -a --delete \
+            --exclude='.git/' \
+            --exclude='.github/' \
+            --exclude='/README.md' \
+            --exclude='/CNAME' \
+            /tmp/upstream/ ./
+          mkdir -p .github
+          printf '%s\n' "${{ steps.upstream.outputs.sha }}" > .github/upstream-sha
+          echo "上游文件总数: $(find /tmp/upstream -mindepth 1 -not -path '*/.git*' | wc -l)"
+
+      - name: 提交并推送
+        if: steps.decide.outputs.changed == 'true'
+        id: commit
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "内容与上游已完全一致，无需提交。"
+            echo "committed=false" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          changed=$(git diff --cached --name-only | wc -l)
+          echo "本次变更文件数: $changed"
+          git diff --cached --name-status | head -50
+          git commit -m "sync: 镜像上游 lubin776/tvbox-api-backup@${{ steps.upstream.outputs.short }}"
+          git push origin HEAD:main
+          echo "committed=true" >> "$GITHUB_OUTPUT"
+          echo "changed=$changed" >> "$GITHUB_OUTPUT"
+
+      - name: 写入运行摘要
+        if: always()
+        run: |
+          {
+            echo "## 上游同步结果"
+            echo ""
+            echo "| 项目 | 值 |"
+            echo "| --- | --- |"
+            echo "| 上游 main 提交 | \`${{ steps.upstream.outputs.sha }}\` |"
+            echo "| 上次同步指纹 | \`${{ steps.upstream.outputs.prev }}\` |"
+            echo "| 是否触发同步 | ${{ steps.decide.outputs.changed }} |"
+            echo "| 是否产生提交 | ${{ steps.commit.outputs.committed }} |"
+            echo "| 变更文件数 | ${{ steps.commit.outputs.changed }} |"
+          } >> "$GITHUB_STEP_SUMMARY"
