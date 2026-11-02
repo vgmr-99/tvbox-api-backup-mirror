@@ -1,0 +1,21 @@
+#EXTM3U
+#EXTINF:-1 tvg-name="👖裤佬体育直播[备]",👖裤佬体育直播[备]
+#EXTM3U
+# 大米直播 - 实时全线路源
+# 北京时间: 2026/11/2 15:50:41
+# 当前直播场次: 4 场
+
+#EXTINF:-1 tvg-logo="https://jsnz.pages.dev/f/5ab7e916.gif" group-title="✈️ TG频道@stymei",☁️官网地址jsnzkpg.com
+https://tymov2.a.kwimgs.com/upic/2026/08/15/09/BMjAyNjA4MTUwOTE2MzRfNDI0MDI5NTBfMjA1NjA5Mjg4OTg3XzFfMw==_b_B664d90218f70be73e07dd3cf02d473f1.mp4
+#EXTINF:-1 tvg-logo="https://jsnz.pages.dev/f/5ab7e916.gif" group-title="澳女篮" tvg-name="[16:00] 本迪高精灵女篮 VS 吉朗毒液女篮 (高清K)",[16:00] 本迪高精灵女篮 VS 吉朗毒液女篮 (高清K)
+https://hello.ooo0ooo.top/live/3925772.m3u8
+#EXTINF:-1 tvg-logo="https://jsnz.pages.dev/f/5ab7e916.gif" group-title="澳女篮" tvg-name="[16:00] 本迪高精灵女篮 VS 吉朗毒液女篮 (高清B)",[16:00] 本迪高精灵女篮 VS 吉朗毒液女篮 (高清B)
+https://pul-tenm.gkykp.com/live/sd-2-3925772.m3u8?txSecret=e39737bd52ed40c7f597d97faf1f603b&txTime=6AE99228
+#EXTINF:-1 tvg-logo="https://jsnz.pages.dev/f/5ab7e916.gif" group-title="蒙古超" tvg-name="[16:00] 中央骏马 VS 德仁FC (高清K)",[16:00] 中央骏马 VS 德仁FC (高清K)
+https://hello.ooo0ooo.top/live/4661421.m3u8
+#EXTINF:-1 tvg-logo="https://jsnz.pages.dev/f/5ab7e916.gif" group-title="蒙古超" tvg-name="[16:00] 中央骏马 VS 德仁FC (高清B)",[16:00] 中央骏马 VS 德仁FC (高清B)
+https://pul-tenm.gkykp.com/live/sd-1-4661421.m3u8?txSecret=bf3a1bb66fd1ed79ff49a4b8f68350cf&txTime=6AE99228
+#EXTINF:-1 tvg-logo="https://jsnz.pages.dev/f/5ab7e916.gif" group-title="印班超" tvg-name="[16:00] 科达古 VS 反叛者SC (高清K)",[16:00] 科达古 VS 反叛者SC (高清K)
+https://hello.ooo0ooo.top/live/4663427.m3u8
+#EXTINF:-1 tvg-logo="https://jsnz.pages.dev/f/5ab7e916.gif" group-title="NCAA" tvg-name="[16:00] 格兰布林大学 VS 北伊利诺大学 (高清K)",[16:00] 格兰布林大学 VS 北伊利诺大学 (高清K)
+https://hello.ooo0ooo.top/live/3950687.m3u8
