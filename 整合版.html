@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=yes">
-<title>海量接口搬运备份</title>
+<title>Aber海量影视接口搬运</title>
 <style>
 /* ============================================================
    公共 CSS
@@ -551,9 +551,9 @@ body.simple-mode #api-panel { display:block !important; }
   <button id="modeToggleBtn">切换<br>全能版</button>
 
   <div class="header-block">
-    <h1><img class="header-logo" id="header-logo" src="https://0.12yue.de5.net/tvbox/x/jueson.jpg" alt="Logo">海量接口搬运备份</h1>
+    <h1>Aber海量影视接口搬运</h1>
     <div class="header-divider"></div>
-    <p class="subtitle" id="header-subtitle">备用数据源，防屏不迷路<br>QQ交流群：1067685939</p>
+    <p class="subtitle" id="header-subtitle">备用数据源，防屏不迷路</p>
   </div>
 
   <div class="main-card">
@@ -625,14 +625,12 @@ body.simple-mode #api-panel { display:block !important; }
           <li id="about-declaration" style="font-size:.76rem;color:#5a6f88;line-height:1.6"></li>
         </ul>
         <p style="margin-top:10px;font-size:.76rem;color:#5a6f88">QQ 交流群：<a id="about-qq" href="#" target="_blank" rel="noopener noreferrer" style="color:#4a9eff;text-decoration:none;font-weight:600"></a></p>
-        <p style="margin-top:10px;font-size:.76rem;color:#5a6f88">Telegram群组：<a id="about-tg" href="#" target="_blank" rel="noopener noreferrer" style="color:#4a9eff;text-decoration:none;font-weight:600"></a></p>
-        <p style="margin-top:10px;font-size:.76rem;color:#5a6f88">项目地址：<a href="https://github.com/lubin776/tvbox-api-backup" target="_blank" rel="noopener noreferrer" style="color:#4a9eff;text-decoration:none;font-weight:600">https://github.com/lubin776/tvbox-api-backup</a></p>
       </div>
     </div>
   </div>
 
   <footer class="page-footer">
-    <p>本站接口资源由【误道者】整理。所有资源均来自互联网，版权归原作者所有。仅供测试学习使用，请勿用于违法及商业用途，请勿付费购买。如涉及侵权，请联系删除。 QQ 群：1067685939。</p>
+    <p>所有资源均来自互联网，版权归原作者所有。仅供测试学习使用，请勿用于违法及商业用途，请勿付费购买。如涉及侵权，请联系删除。</p>
   </footer>
 </div>
 
@@ -643,14 +641,13 @@ body.simple-mode #api-panel { display:block !important; }
 
 const MODE_KEY = 'site_mode';
 const TAB_KEY = 'current_tab';
-const VALID_TABS = ['api','live','download','video','more','about'];
+const VALID_TABS = ['api','live','download','video','more'];
 
 const btn = document.getElementById('modeToggleBtn');
 const searchBox = document.getElementById('search');
 const mainCard = document.querySelector('.main-card');
 const navTabs = document.getElementById('navTabs');
 
-const headerLogo = document.getElementById('header-logo');
 const headerSubtitle = document.getElementById('header-subtitle');
 
 const API_DOMAINS = [
@@ -754,9 +751,8 @@ async function loadConfig() {
     renderAboutText(SITE_CONFIG.about);
 
     if (SITE_CONFIG.site) {
-      if (SITE_CONFIG.site.logo) headerLogo.src = SITE_CONFIG.site.logo;
       if (SITE_CONFIG.site.title) {
-        const h1 = headerLogo.parentNode;
+        const h1 = document.querySelector('.header-block h1') || document.querySelector('h1');
         let found = false;
         h1.childNodes.forEach(n => {
           if (n.nodeType === Node.TEXT_NODE && n.textContent.trim()) {
@@ -770,8 +766,6 @@ async function loadConfig() {
         let sub = SITE_CONFIG.site.subtitle || '备用数据源，防屏不迷路';
         if (SITE_CONFIG.site.qqGroup) {
           sub += '<br>QQ交流群：' + SITE_CONFIG.site.qqGroup;
-        } else {
-          sub += '<br>QQ交流群：1067685939';
         }
         headerSubtitle.innerHTML = sub;
       }
@@ -803,7 +797,7 @@ function renderAboutText(about) {
   if (dec && about.declaration) dec.textContent = about.declaration;
   if (qq && about.qqGroup) {
     qq.textContent = about.qqGroup;
-    qq.href = 'https://qm.qq.com/q/gmRKKPT3x0';
+    qq.href = 'https://qm.qq.com/q/AHdEltSEJW';
   }
   if (tg && about.telegram) {
     tg.textContent = about.telegram;
@@ -1199,8 +1193,7 @@ const tabsData = [
   {id:"live",label:"直播"},
   {id:"download",label:"下载"},
   {id:"video",label:"快链"},
-  {id:"more",label:"更多"},
-  {id:"about",label:"关于"}
+  {id:"more",label:"更多"}
 ];
 
 function renderTabs() {

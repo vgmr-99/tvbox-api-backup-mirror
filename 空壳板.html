@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=yes">
-<title>海量接口搬运备份</title>
+<title>Aber海量影视接口搬运</title>
 <style>
 *, *::before, *::after { margin:0; padding:0; box-sizing:border-box; }
 html { height:100%; }
@@ -259,7 +259,7 @@ body.simple-mode #api-panel { display:block !important; }
   <button id="modeToggleBtn">切换<br>全能版</button>
 
   <div class="header-block">
-    <h1><img class="header-logo" id="header-logo" src="" alt="Logo"><span id="header-title"></span></h1>
+    <h1><span id="header-title"></span></h1>
     <div class="header-divider"></div>
     <p class="subtitle" id="header-subtitle"></p>
   </div>
@@ -321,8 +321,6 @@ body.simple-mode #api-panel { display:block !important; }
           <li id="about-declaration" style="font-size:.76rem;color:#5a6f88;line-height:1.6"></li>
         </ul>
         <p style="margin-top:10px;font-size:.76rem;color:#5a6f88">QQ 交流群：<a id="about-qq" href="#" target="_blank" rel="noopener noreferrer" style="color:#4a9eff;text-decoration:none;font-weight:600"></a></p>
-        <p style="margin-top:10px;font-size:.76rem;color:#5a6f88">Telegram群组：<a id="about-tg" href="#" target="_blank" rel="noopener noreferrer" style="color:#4a9eff;text-decoration:none;font-weight:600"></a></p>
-        <p style="margin-top:10px;font-size:.76rem;color:#5a6f88">项目地址：<a id="about-project" href="#" target="_blank" rel="noopener noreferrer" style="color:#4a9eff;text-decoration:none;font-weight:600"></a></p>
       </div>
     </div>
   </div>
@@ -344,7 +342,6 @@ const btn = document.getElementById('modeToggleBtn');
 const searchBox = document.getElementById('search');
 const mainCard = document.querySelector('.main-card');
 const navTabs = document.getElementById('navTabs');
-const headerLogo = document.getElementById('header-logo');
 const headerTitle = document.getElementById('header-title');
 const headerSubtitle = document.getElementById('header-subtitle');
 const footerText = document.getElementById('footer-text');
@@ -429,8 +426,7 @@ async function loadConfig() {
 
   // 站点信息
   const site = SITE_CONFIG.site || {};
-  if (site.logo) headerLogo.src = site.logo;
-  headerTitle.textContent = site.title || '海量接口搬运备份';
+  headerTitle.textContent = site.title || 'Aber海量影视接口搬运';
   let sub = site.subtitle || '备用数据源，防屏不迷路';
   if (site.qqGroup) sub += '<br>QQ交流群：' + site.qqGroup;
   headerSubtitle.innerHTML = sub;
@@ -518,7 +514,7 @@ function renderAboutText(about) {
   if (dec && about.declaration) dec.textContent = about.declaration;
   if (qq && about.qqGroup) {
     qq.textContent = about.qqGroup;
-    qq.href = 'https://qm.qq.com/q/gmRKKPT3x0';
+    qq.href = 'https://qm.qq.com/q/AHdEltSEJW';
   }
   if (tg && about.telegram) {
     tg.textContent = about.telegram;

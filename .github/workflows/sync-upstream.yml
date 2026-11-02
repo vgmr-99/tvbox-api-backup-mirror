@@ -87,6 +87,9 @@ jobs:
           #   CNAME                    上游 CNAME 指向自定义域，带过来会导致 Pages 域名校验失败
           #   .gitattributes           本站关闭行尾转换（* -text），保证站点文件逐字节与线上一致
           #   index.html / config.json 本站前端与站点配置（取自 0.wudaozhe.net 线上版）
+          #   其余站点前端页（a.html / app.html / 空壳板.html / 整合版.html / qq.html /
+          #   sqtj.html / 社群推荐.html / firstpage.html / into.html / 内嵌检测页1.0.3.html）
+          #   也已按本站需求改造，同样属于自有资产，禁止被上游覆盖。
           #   list.txt / livelist.txt  本站接口清单（由本站采集工作流生成）
           #   SUMMARY.txt              本站采集报告
           #   tvbox/                   本站接口数据（点播 json / 直播源 / 聚合接口）
@@ -98,6 +101,16 @@ jobs:
             --exclude='/CNAME' \
             --exclude='/index.html' \
             --exclude='/config.json' \
+            --exclude='/a.html' \
+            --exclude='/app.html' \
+            --exclude='/空壳板.html' \
+            --exclude='/整合版.html' \
+            --exclude='/qq.html' \
+            --exclude='/sqtj.html' \
+            --exclude='/社群推荐.html' \
+            --exclude='/firstpage.html' \
+            --exclude='/into.html' \
+            --exclude='/内嵌检测页1.0.3.html' \
             --exclude='/list.txt' \
             --exclude='/livelist.txt' \
             --exclude='/SUMMARY.txt' \
