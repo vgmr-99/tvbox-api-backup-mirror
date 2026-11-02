@@ -190,8 +190,8 @@
       "type": 3,
       "api": "csp_FyGuard",
       "ext": {
-        "type": "video",
-        "name": "Fy"
+        "type": "http://fty.888484.xyz/video",
+        "name": "http://fty.888484.xyz/Fy"
       },
       "quickSearch": 1,
       "searchable": 1,
@@ -257,8 +257,8 @@
       "type": 3,
       "api": "csp_AiDjGuard",
       "ext": {
-        "type": "video",
-        "name": "短剧",
+        "type": "http://fty.888484.xyz/video",
+        "name": "http://fty.888484.xyz/短剧",
         "danMu": false
       },
       "indexs": 0,
@@ -326,7 +326,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "uqGL1fpJNAUN8ORQgIPD+b6l+CzC2t8="
+      "ext": "http://fty.888484.xyz/uqGL1fpJNAUN8ORQgIPD+b6l+CzC2t8="
     },
     {
       "key": "MTV",

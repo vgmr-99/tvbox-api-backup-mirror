@@ -65,7 +65,7 @@
       "searchable": 0,
       "quickSearch": 0,
       "changeable": 0,
-      "ext": "game"
+      "ext": "http://肥猫.net/game"
     },
     {
       "key": "csp_FeiMaoUC",
@@ -82,7 +82,7 @@
           "chunksize": 512,
           "threads": 16
         },
-        "url_key": "FeiMaoUC"
+        "url_key": "http://肥猫.net/FeiMaoUC"
       }
     },
     {
@@ -105,14 +105,14 @@
       "type": 3,
       "api": "csp_AppDrama2",
       "ext": {
-        "appName": "小苹果",
+        "appName": "http://肥猫.net/小苹果",
         "publicKey": "http://肥猫.net/MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
-        "dataKey": "S0VNDTJHOFHHCNMRAW5IV2TOS2PBPQ==",
-        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-        "pkg": "com.juechufsh.android.xpg1",
+        "dataKey": "http://肥猫.net/S0VNDTJHOFHHCNMRAW5IV2TOS2PBPQ==",
+        "dataIv": "http://肥猫.net/OC1A06E197EF10CF3F6058CA7A803B5E",
+        "pkg": "http://肥猫.net/com.juechufsh.android.xpg1",
         "host": "",
         "site": "https://xpgandroid03-1372779881.cos.ap-beijing.myqcloud.com/app_xpg_android.txt",
-        "version": "1.0.0.3",
+        "version": "http://肥猫.net/1.0.0.3",
         "decrypt": "0"
       }
     },
@@ -129,14 +129,14 @@
       "type": 3,
       "api": "csp_AppDrama2",
       "ext": {
-        "appName": "华谊",
+        "appName": "http://肥猫.net/华谊",
         "publicKey": "http://肥猫.net/MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
-        "dataKey": "V04XQZNYRWN6T0JODZFIAG5CTZB3PT0=",
-        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-        "pkg": "com.lxf.sncgtzxyx",
+        "dataKey": "http://肥猫.net/V04XQZNYRWN6T0JODZFIAG5CTZB3PT0=",
+        "dataIv": "http://肥猫.net/OC1A06E197EF10CF3F6058CA7A803B5E",
+        "pkg": "http://肥猫.net/com.lxf.sncgtzxyx",
         "host": "",
         "site": "https://1851089669.cdn.123clouddisk.com/1851089669/44107727",
-        "version": "6.0.0.1",
+        "version": "http://肥猫.net/6.0.0.1",
         "decrypt": "1"
       }
     },
@@ -146,14 +146,14 @@
       "type": 3,
       "api": "csp_AppDrama2",
       "ext": {
-        "appName": "电影天堂",
+        "appName": "http://肥猫.net/电影天堂",
         "publicKey": "http://肥猫.net/MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCduNEnfxGaLuQRk5ABzXHhPV43zi00sCHjLo8BYc+Wi6xXm2b4v0i28Sq4WlNCKhseft9fz8kO/qLr6/022o1RcuOU7e4GFL3U9WnNODwRBYSYWd+K8nqpI/tAUDmZEBGRWqjrc7x6aMl3A+xpnWkLbPCLsuhbuuUE3tv09oeOpwIDAQAB",
-        "dataKey": "D2KREWRIBVNAUJJYEDL4VFHOY2Q0PQ==",
-        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-        "pkg": "com.dytiantang.one",
+        "dataKey": "http://肥猫.net/D2KREWRIBVNAUJJYEDL4VFHOY2Q0PQ==",
+        "dataIv": "http://肥猫.net/OC1A06E197EF10CF3F6058CA7A803B5E",
+        "pkg": "http://肥猫.net/com.dytiantang.one",
         "host": "",
         "site": "https://dyttandroid04-1372779881.cos.ap-shanghai.myqcloud.com/app_dyttandroid.txt",
-        "version": "3.0.0.7",
+        "version": "http://肥猫.net/3.0.0.7",
         "decrypt": "0"
       }
     },
@@ -163,14 +163,14 @@
       "type": 3,
       "api": "csp_AppDrama2",
       "ext": {
-        "appName": "橘汁",
+        "appName": "http://肥猫.net/橘汁",
         "publicKey": "http://肥猫.net/MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCr8SzZhjYy+rsya1K09t8d2K50pWFoBkgUqMpKOiW+3IEVKd4eTdvg9RSOjQ82kypL6R9BnsmrS1V8s4PVDwjQbUtYhTPPC9Hz16qY7rpD6m0d2vr09/UpWQ5uOy9PR0QTrsioveZ+DIe9jc3C+zBCu/kZSY/R8stwJoiitki3gwIDAQAB",
-        "dataKey": "OW1WBLFZCLJ0WTNJQMRSZ2DYSGNBPT0=",
-        "dataIv": "OC1A06E197EF10CF3F6058CA7A803B5E",
-        "pkg": "com.mxj.wylcjbxyx",
+        "dataKey": "http://肥猫.net/OW1WBLFZCLJ0WTNJQMRSZ2DYSGNBPT0=",
+        "dataIv": "http://肥猫.net/OC1A06E197EF10CF3F6058CA7A803B5E",
+        "pkg": "http://肥猫.net/com.mxj.wylcjbxyx",
         "host": "",
         "site": "https://123-1349250429.cos.ap-shanghai.myqcloud.com/app.txt",
-        "version": "3.0.2.4",
+        "version": "http://肥猫.net/3.0.2.4",
         "decrypt": "1"
       }
     },
@@ -463,12 +463,12 @@
     {
       "name": "Json聚合",
       "type": 3,
-      "url": "Demo"
+      "url": "http://肥猫.net/Demo"
     },
     {
       "name": "Web聚合",
       "type": 3,
-      "url": "Web"
+      "url": "http://肥猫.net/Web"
     },
     {
       "name": "qiyi[官源]",

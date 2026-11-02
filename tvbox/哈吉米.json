@@ -345,8 +345,8 @@
       "api": "https://pan.szfx.top/down.php/08343ea7d5d8d12da1c16f9ccf03040d.js",
       "ext": {
         "host": "http://110.42.67.221:6802",
-        "key": "1vi33w2pAHEm8Y6U",
-        "init": "V122",
+        "key": "https://17264.kstore.space/1vi33w2pAHEm8Y6U",
+        "init": "https://17264.kstore.space/V122",
         "api": 2,
         "ua": "https://17264.kstore.space/okhttp/3.10.0"
       }
@@ -548,9 +548,9 @@
       "api": "csp_XBPQ",
       "jar": "https://wp.kayyw.com/f/bobgtv/%E5%B0%B1%E5%87%A0%E4%B8%AA.jar",
       "ext": {
-        "副标题": "保护正版，人人有责",
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
+        "副标题": "https://17264.kstore.space/保护正版，人人有责",
+        "请求头": "https://17264.kstore.space/User-Agent$MOBILE_UA",
+        "编码": "https://17264.kstore.space/UTF-8",
         "分类url": "https://m.ycblcw.com/"
       }
     },
@@ -561,9 +561,9 @@
       "api": "csp_XBPQ",
       "jar": "https://wp.kayyw.com/f/bobgtv/%E5%B0%B1%E5%87%A0%E4%B8%AA.jar",
       "ext": {
-        "副标题": "保护正版，人人有责",
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
+        "副标题": "https://17264.kstore.space/保护正版，人人有责",
+        "请求头": "https://17264.kstore.space/User-Agent$MOBILE_UA",
+        "编码": "https://17264.kstore.space/UTF-8",
         "分类url": "https://vip.wwgz.cn:5200/"
       }
     },
@@ -586,12 +586,12 @@
       "api": "csp_XBPQ",
       "jar": "https://wp.kayyw.com/f/bobgtv/%E5%B0%B1%E5%87%A0%E4%B8%AA.jar",
       "ext": {
-        "副标题": "保护正版，人人有责",
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
+        "副标题": "https://17264.kstore.space/保护正版，人人有责",
+        "请求头": "https://17264.kstore.space/User-Agent$MOBILE_UA",
+        "编码": "https://17264.kstore.space/UTF-8",
         "主页url": "https://www.cd-zj.com/label/qq.html",
         "分类url": "https://www.cd-zj.com/cupfox-list/{cateId}-{area}--{class}-----{catePg}---{year}.html",
-        "分类": "腾讯$5#电视剧$2#电影$1#动漫$4#综艺$3"
+        "分类": "https://17264.kstore.space/腾讯$5#电视剧$2#电影$1#动漫$4#综艺$3"
       }
     },
     {
@@ -601,11 +601,11 @@
       "api": "csp_XBPQ",
       "jar": "https://wp.kayyw.com/f/bobgtv/%E5%B0%B1%E5%87%A0%E4%B8%AA.jar",
       "ext": {
-        "副标题": "保护正版，人人有责",
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
+        "副标题": "https://17264.kstore.space/保护正版，人人有责",
+        "请求头": "https://17264.kstore.space/User-Agent$MOBILE_UA",
+        "编码": "https://17264.kstore.space/UTF-8",
         "分类url": "http://114bate.com/hdshow/{cateId}-{area}-{by}-{class}-{lang}----{catePg}---{year}.html",
-        "分类": "电影$1#电视剧$2#综艺$3#动漫$4#短剧$5#日韩$6"
+        "分类": "https://17264.kstore.space/电影$1#电视剧$2#综艺$3#动漫$4#短剧$5#日韩$6"
       }
     },
     {
@@ -615,11 +615,11 @@
       "api": "csp_XBPQ",
       "jar": "https://wp.kayyw.com/f/bobgtv/%E5%B0%B1%E5%87%A0%E4%B8%AA.jar",
       "ext": {
-        "副标题": "保护正版，人人有责",
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
+        "副标题": "https://17264.kstore.space/保护正版，人人有责",
+        "请求头": "https://17264.kstore.space/User-Agent$MOBILE_UA",
+        "编码": "https://17264.kstore.space/UTF-8",
         "分类url": "https://www.wbbb1.com/",
-        "分类": "电影$1#电视剧$2#动漫$3#综艺$4"
+        "分类": "https://17264.kstore.space/电影$1#电视剧$2#动漫$3#综艺$4"
       }
     },
     {
@@ -632,14 +632,14 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
+        "请求头": "https://17264.kstore.space/User-Agent$MOBILE_UA",
+        "编码": "https://17264.kstore.space/UTF-8",
         "主页url": "https://cn.agekkkk.com/",
-        "线路标题": "动漫",
-        "跳转播放链接": "urlDecode(var player_*\"url\":\"&&\")",
+        "线路标题": "https://17264.kstore.space/动漫",
+        "跳转播放链接": "https://17264.kstore.space/urlDecode(var player_*\"url\":\"&&\")",
         "简介": "https://17264.kstore.space/style=\"display: none;\">&&</span>",
         "分类url": "https://cn.agekkkk.com/type/{cateId}-{catePg}.html",
-        "分类": "日韩漫$1#国产漫$2#动态漫$5#特摄片$4#欧美漫$3"
+        "分类": "https://17264.kstore.space/日韩漫$1#国产漫$2#动态漫$5#特摄片$4#欧美漫$3"
       }
     },
     {
@@ -652,12 +652,12 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "请求头": "User-Agent$MOBILE_UA",
-        "编码": "UTF-8",
+        "请求头": "https://17264.kstore.space/User-Agent$MOBILE_UA",
+        "编码": "https://17264.kstore.space/UTF-8",
         "主页url": "https://silidm.com/",
-        "线路标题": "保护正版，人人有责",
+        "线路标题": "https://17264.kstore.space/保护正版，人人有责",
         "分类url": "https://silidm.com/show/{cateId}-{area}-{by}-{class}-{lang}-{letter}---{catePg}---{year}.html",
-        "分类": "电影$dianying#剧集$juji#动漫$dongman#综艺$zongyi"
+        "分类": "https://17264.kstore.space/电影$dianying#剧集$juji#动漫$dongman#综艺$zongyi"
       }
     },
     {
@@ -857,7 +857,7 @@
       "api": "csp_AppGet",
       "ext": {
         "host": "https://miget-1313189639.cos.ap-guangzhou.myqcloud.com/mifun.txt",
-        "datakey": "GETMIFUNGEIMIFUN"
+        "datakey": "https://17264.kstore.space/GETMIFUNGEIMIFUN"
       }
     },
     {
@@ -1291,7 +1291,7 @@
         "site": [
           "https://www.kfzy.net"
         ],
-        "cookie": "bbs_sid=qovfaruectri75sqq38blhqt7o; bbs_token=Bvf498_2FJNbnAe_2Fse39EweDe_2BlQnFYo4s_2FpFtyHueqcGKOssB"
+        "cookie": "https://17264.kstore.space/bbs_sid=qovfaruectri75sqq38blhqt7o; bbs_token=Bvf498_2FJNbnAe_2Fse39EweDe_2BlQnFYo4s_2FpFtyHueqcGKOssB"
       },
       "timeout": 60
     },
@@ -1620,7 +1620,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "cloudDrives": "aliyun"
+        "cloudDrives": "https://17264.kstore.space/aliyun"
       }
     },
     {
@@ -1633,7 +1633,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "cloudDrives": "quark"
+        "cloudDrives": "https://17264.kstore.space/quark"
       }
     },
     {
@@ -1646,7 +1646,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "cloudDrives": "uc"
+        "cloudDrives": "https://17264.kstore.space/uc"
       }
     },
     {
@@ -1659,7 +1659,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "cloudDrives": "tianyi"
+        "cloudDrives": "https://17264.kstore.space/tianyi"
       }
     },
     {
@@ -1685,7 +1685,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "cloudDrives": "baidu"
+        "cloudDrives": "https://17264.kstore.space/baidu"
       }
     },
     {
@@ -1698,7 +1698,7 @@
       "quickSearch": 1,
       "filterable": 1,
       "ext": {
-        "cloudDrives": "mobile"
+        "cloudDrives": "https://17264.kstore.space/mobile"
       }
     },
     {
@@ -1774,7 +1774,7 @@
     {
       "name": "自动解析",
       "type": 2,
-      "url": "Parallel"
+      "url": "https://17264.kstore.space/Parallel"
     },
     {
       "name": "不知道谁的",
