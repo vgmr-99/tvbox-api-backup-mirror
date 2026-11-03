@@ -34,21 +34,6 @@
       flex-direction: column;
     }
 
-    #modeToggleBtn {
-      display: block;
-      margin: 10px auto 0;
-      width: 56px;
-      padding: 6px 4px;
-      border-radius: 50px;
-      border: 1px solid #4a9eff;
-      background: #fff;
-      color: #4a9eff;
-      font-size: .58rem;
-      line-height: 1.3;
-      text-align: center;
-      cursor: pointer;
-    }
-
     .header-block { text-align: center; margin-bottom: 16px; padding-top: 14px; }
     h1 { font-size: 1.35rem; font-weight: 700; color: #0a1a2b; }
     h1 .header-logo {
@@ -1004,7 +989,6 @@
 
     @media (max-width: 600px) {
       body { padding: 14px 8px 6px; }
-      #modeToggleBtn { width: 48px; font-size: .52rem; padding: 4px 2px; }
       .main-card { padding: 14px 14px 12px; }
       .header-block { padding-top: 10px; margin-bottom: 12px; }
       h1 { font-size: 1.15rem; }
@@ -1047,7 +1031,7 @@
   </style>
 </head>
 
-<body class="simple-mode">
+<body class="full-mode">
 
   <div class="container">
     <div class="header-block">
@@ -1055,7 +1039,6 @@
         <span id="header-title"></span>
       </h1>
       <div class="header-divider"></div>
-      <button id="modeToggleBtn">切换<br>全能版</button>
       <p class="subtitle" id="header-subtitle"></p>
     </div>
 
@@ -1160,10 +1143,8 @@
   </div>
 
   <script>
-    const MODE_KEY = 'site_mode';
     const TAB_KEY  = 'current_tab';
 
-    const btn = document.getElementById('modeToggleBtn');
     const searchBox = document.getElementById('search');
     const mainCard = document.querySelector('.main-card');
     const navTabs = document.getElementById('navTabs');
@@ -1183,15 +1164,14 @@
     let SEARCH_CFG = { placeholder: '🔍 搜索...', hideOnTabs: [], searchableTabs: [], searchableTabsFull: [], selectors: {} };
     let CUSTOM_APIS = [];
 
-    let currentMode = localStorage.getItem(MODE_KEY) || 'simple';
+    let currentMode = 'full';  // 固定全能版展示（切换按钮已移除）
     let currentTabId = 'api';
     let topSeed = Date.now();
     let rawListText = null;
     let rawLiveText = null;
     let DOWNLOAD_SOURCES = [];
 
-    document.body.className = currentMode + '-mode';
-    updateBtnText();
+    document.body.className = 'full-mode';
 
     function isImageIcon(icon) {
       if (!icon || typeof icon !== 'string') return false;
@@ -2043,28 +2023,7 @@
         if (searchBox.parentNode !== mainCard) navTabs.insertAdjacentElement('afterend', searchBox);
       }
     }
-    function updateBtnText() {
-      btn.innerHTML = currentMode === 'simple' ? '切换<br>全能版' : '切换<br>简洁版';
-    }
 
-    btn.addEventListener('click', () => {
-      topSeed = Date.now() + Math.random();
-      currentMode = currentMode === 'simple' ? 'full' : 'simple';
-      localStorage.setItem(MODE_KEY, currentMode);
-      document.body.className = currentMode + '-mode';
-      updateBtnText();
-      if (currentMode !== 'simple') {
-        positionSearchBox();
-        renderTabs();
-        showPanel(currentTabId);
-      } else {
-        currentTabId = 'api';
-        localStorage.setItem(TAB_KEY, 'api');
-        searchBox.style.display = '';
-        positionSearchBox();
-        renderApi();
-      }
-    });
 
     (async function init() {
       try {
