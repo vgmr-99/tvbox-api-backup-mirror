@@ -10,6 +10,12 @@
       "filterable": 0
     },
     {
+      "key": "py_yangshipin",
+      "name": "直播[py]",
+      "type": 3,
+      "api": "https://clun.top/py/yangshipin.py"
+    },
+    {
       "key": "py_shortfilm",
       "name": "短剧[py]",
       "type": 3,
@@ -716,7 +722,7 @@
       "name": "艾旦 | 采集",
       "type": 1,
       "ext": {
-        "proxy": "proxy"
+        "proxy": "https://clun.top/proxy"
       },
       "api": "https://www.lovedan.net/api.php/provide/vod/",
       "quickSearch": 1,
@@ -821,12 +827,12 @@
     {
       "name": "cluntop",
       "type": 0,
-      "url": "./lib/iptv.m3u"
+      "url": "https://clun.top/lib/iptv.m3u"
     },
     {
       "name": "cluntop_test",
       "type": 0,
-      "url": "./lib/iptv_test.m3u"
+      "url": "https://clun.top/lib/iptv_test.m3u"
     },
     {
       "name": "歌手直播",
@@ -1314,7 +1320,7 @@
       }
     }
   ],
-  "wallpaper": "./img/0.jpg",
+  "wallpaper": "https://clun.top/img/0.jpg",
   "spider": "https://clun.top/jar/xs.jar",
   "logo": "https://clun.top/img/pg.gif"
 }
