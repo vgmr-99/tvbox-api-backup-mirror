@@ -554,9 +554,9 @@
     },
     {
       "key": "山木",
-      "name": "山木",
+      "name": "♨️山木｜4K线路",
       "type": 3,
-      "api": "https://fastlink.cokey.xyz/f/p6rZcj/%E5%B1%B1%E6%9C%89%E6%9C%A8%E5%85%AE.py",
+      "api": "https://gh-proxy.com/raw.githubusercontent.com/IY-CPU/IY/main/lib/sm.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -1040,18 +1040,18 @@
     },
     {
       "key": "6",
-      "name": "👖采集",
+      "name": "👖短剧",
       "type": 3,
-      "api": "https://jsnz.pages.dev/f/72b7239d.py",
+      "api": "https://jsnz.pages.dev/f/29b94aff.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
     },
     {
       "key": "7",
-      "name": "👖短剧",
+      "name": "👖采集",
       "type": 3,
-      "api": "https://jsnz.pages.dev/f/29b94aff.py",
+      "api": "https://jsnz.pages.dev/f/72b7239d.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -1085,6 +1085,15 @@
     },
     {
       "key": "12",
+      "name": "👖磁力",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/baad9656.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "13",
       "name": "👖4k",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/af676592.py",
@@ -1093,19 +1102,10 @@
       "filterable": 1
     },
     {
-      "key": "13",
+      "key": "14",
       "name": "👖APP",
       "type": 3,
       "api": "https://jsnz.pages.dev/f/77cec76a.py",
-      "searchable": 1,
-      "quickSearch": 1,
-      "filterable": 1
-    },
-    {
-      "key": "14",
-      "name": "👖PY",
-      "type": 3,
-      "api": "https://jsnz.pages.dev/f/e1aeef83.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -1121,9 +1121,9 @@
     },
     {
       "key": "21",
-      "name": "👖听书",
+      "name": "👖API",
       "type": 3,
-      "api": "https://jsnz.pages.dev/f/d44dd2cf.py",
+      "api": "https://jsnz.pages.dev/f/cf616b2f.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -1139,9 +1139,9 @@
     },
     {
       "key": "23",
-      "name": "👖有声",
+      "name": "👖听书",
       "type": 3,
-      "api": "https://jsnz.pages.dev/f/e126d1e4.py",
+      "api": "https://jsnz.pages.dev/f/d44dd2cf.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1
@@ -1160,6 +1160,51 @@
       "name": "全看影院",
       "type": 3,
       "api": "https://mpimg.cn/down.php/dd661a252935cd30df6aa185e23d4488.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "py_yangshipin",
+      "name": "直播[py]",
+      "type": 3,
+      "api": "https://clun.top/py/yangshipin.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "山楂",
+      "name": "♨️山楂｜4K线路",
+      "type": 3,
+      "api": "https://gh-proxy.com/raw.githubusercontent.com/IY-CPU/IY/main/lib/sz.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "15",
+      "name": "👖PY",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/e1aeef83.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "20",
+      "name": "👖FM",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/cec31b11.py",
+      "searchable": 1,
+      "quickSearch": 1,
+      "filterable": 1
+    },
+    {
+      "key": "24",
+      "name": "👖有声",
+      "type": 3,
+      "api": "https://jsnz.pages.dev/f/e126d1e4.py",
       "searchable": 1,
       "quickSearch": 1,
       "filterable": 1

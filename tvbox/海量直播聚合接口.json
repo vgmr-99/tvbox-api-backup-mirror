@@ -1,6 +1,18 @@
 {
   "lives": [
     {
+      "name": "cluntop",
+      "url": "https://clun.top/lib/iptv.m3u",
+      "ua": "",
+      "source": "clun"
+    },
+    {
+      "name": "cluntop_test",
+      "url": "https://clun.top/lib/iptv_test.m3u",
+      "ua": "",
+      "source": "clun"
+    },
+    {
       "name": "歌手直播",
       "url": "https://mgtv.ottiptv.cc/mglist.m3u",
       "ua": "okhttp/3.15",
@@ -661,32 +673,26 @@
       "source": "裤佬线路"
     },
     {
-      "name": "🍿聚合TV直播",
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/pan8664716/MultiLive/main/output/multilive.m3u",
-      "ua": "",
-      "source": "裤佬线路"
-    },
-    {
       "name": "🍿PPV体育赛事直播",
-      "url": "https://www.korice.eu.org/ppv_m3u.php",
+      "url": "https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php",
       "ua": "",
       "source": "裤佬线路"
     },
     {
       "name": "🍿韩国Panda直播",
-      "url": "https://xiongmao.caonizuzong.indevs.in/all.m3u",
+      "url": "https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u",
       "ua": "",
       "source": "裤佬线路"
     },
     {
       "name": "🍿乌拉TV直播",
-      "url": "https://ilook.epg.one/5CM5SY98BF24PL/2",
+      "url": "https://jsnzkpg4.pages.dev/https://ilook.epg.one/5CM5SY98BF24PL/2",
       "ua": "",
       "source": "裤佬线路"
     },
     {
       "name": "🍿全球TV直播",
-      "url": "https://seep.eu.org/iptv-org.github.io/iptv/index.m3u",
+      "url": "https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u",
       "ua": "",
       "source": "裤佬线路"
     },
