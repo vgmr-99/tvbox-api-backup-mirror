@@ -1,11 +1,10 @@
 [
         {
         "name": "误道者站点",
-        "icon": "vip/误道者.jpg",
+        "icon": "vip/jueson.jpg",
         "desc": "",
         "domains": [
           "https://0.wudaozhe.net",
-          "https://1.wudaozhe.net",
           "https://0.12yue.de5.net",
           "https://0.cdz.qzz.io",
           "https://0.wdzb.eu.cc"
@@ -13,7 +12,7 @@
       },
       {
         "name": "雪衣玉龙站点",
-        "icon": "vip/雪衣玉龙.jpeg",
+        "icon": "vip/雪衣玉龙.jpg",
         "desc": "",
         "domains": [
           "https://ym.120733.xyz",
@@ -22,7 +21,7 @@
       },
       {
         "name": "韧忍仁人站点",
-        "icon": "vip/刘军.jpeg",
+        "icon": "vip/刘军.jpg",
         "desc": "",
         "domains": [
           "https://liujin86.ccwu.cc",
@@ -31,7 +30,7 @@
       },
       {
         "name": "第五站点",
-        "icon": "vip/第五.jpeg",
+        "icon": "vip/第五.jpg",
         "desc": "",
         "domains": [
           "https://tvthaox.cc.cd",
@@ -40,7 +39,7 @@
       },
       {
         "name": "祥子站点",
-        "icon": "vip/祥子.jpeg",
+        "icon": "vip/祥子.jpg",
         "desc": "",
         "domains": [
           "https://nxz.de5.net",
@@ -50,19 +49,19 @@
       },
       {
         "name": "第七站点",
-        "icon": "vip/第七.jpeg",
+        "icon": "vip/第七.jpg",
         "desc": "",
         "domains": [
-          "https://tvbox-api.luca.dpdns.org"
+    "https://tvbox-api.luca.dpdns.org"
         ]
       },
       {
         "name": "Eternity站点",
-        "icon": "https://pic.feria.eu.orgg/LXYHnWCr/IMG-20260823-083826-552.jpeg",
+        "icon": "https://pic.feria.eu.org/LXYHnWCr/IMG-20260823-083826-552.jpg",
         "desc": "",
         "domains": [
-     
-          "https://x.wudaozhe.net" ,    "https://tvbox.jierry123.eu.cc"
+          "https://x.wudaozhe.net" ,
+      "https://tvbox.jierry123.eu.cc"
         ]
       }
 ]
