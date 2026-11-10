@@ -337,6 +337,12 @@
       "source": "小米"
     },
     {
+      "name": "钵钵鸡(四网通用)",
+      "url": "http://hb.小虎斑.site:25252/切换成你自己的地址",
+      "ua": "",
+      "source": "小虎斑"
+    },
+    {
       "name": "咪咕",
       "url": "https://develop202.github.io/migu_video/interface.txt",
       "ua": "",
@@ -571,26 +577,14 @@
       "source": "聚玩"
     },
     {
-      "name": "Gather「果」",
-      "url": "https://tv.tmxk.kdns.fr/yplrnuc7",
-      "ua": "okhttp/3.8.1",
-      "source": "肥猫"
-    },
-    {
       "name": "👖裤佬IPTV直播",
       "url": "https://iptv.445569.xyz/live.m3u",
       "ua": "",
       "source": "裤佬线路"
     },
     {
-      "name": "👖裤佬体育直播[主]",
+      "name": "👖裤佬体育直播",
       "url": "https://jsnzkpg.de5.net/all.m3u",
-      "ua": "",
-      "source": "裤佬线路"
-    },
-    {
-      "name": "👖裤佬体育直播[备]",
-      "url": "https://stymei.pages.dev/live.m3u",
       "ua": "",
       "source": "裤佬线路"
     },
@@ -661,38 +655,8 @@
       "source": "裤佬线路"
     },
     {
-      "name": "🍿易发TV直播",
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/fafa002/yf2025/refs/heads/main/yiyifafa.txt",
-      "ua": "",
-      "source": "裤佬线路"
-    },
-    {
-      "name": "🍿华视TV直播",
-      "url": "https://445569.pages.dev/https://raw.githubusercontent.com/swhtv/111/refs/heads/main/华视box华视大全swtv",
-      "ua": "",
-      "source": "裤佬线路"
-    },
-    {
-      "name": "🍿PPV体育赛事直播",
-      "url": "https://jsnzkpg4.pages.dev/https://www.korice.eu.org/ppv_m3u.php",
-      "ua": "",
-      "source": "裤佬线路"
-    },
-    {
-      "name": "🍿韩国Panda直播",
-      "url": "https://jsnzkpg4.pages.dev/https://xiongmao.caonizuzong.indevs.in/all.m3u",
-      "ua": "",
-      "source": "裤佬线路"
-    },
-    {
-      "name": "🍿乌拉TV直播",
-      "url": "https://jsnzkpg4.pages.dev/https://ilook.epg.one/5CM5SY98BF24PL/2",
-      "ua": "",
-      "source": "裤佬线路"
-    },
-    {
-      "name": "🍿全球TV直播",
-      "url": "https://jsnzkpg4.pages.dev/https://iptv-org.github.io/iptv/index.m3u",
+      "name": "🍿地方台直播",
+      "url": "https://sd.shandong.bbroot.com/xk/zb.txt",
       "ua": "",
       "source": "裤佬线路"
     },
